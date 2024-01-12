@@ -1,0 +1,21 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+api_login:
+    path: /api/login
+    methods: ['POST']
+
+api_articles:
+    path: /article
+    methods: ['GET']
+
+api_users:
+    path: /user
+    methods: ['GET']
+
+api_doc:
+    path: /
+    controller: api_platform.swagger_ui.action
